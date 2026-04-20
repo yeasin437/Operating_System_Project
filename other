@@ -1,0 +1,14 @@
+gcc loganalyzer.c -o loganalyzer
+
+gcc loganalyzer.c -o loganalyzer -D_GNU_SOURCE
+
+INFO System started
+INFO User logged in
+WARNING Disk space is getting low
+ERROR Failed to open config file
+INFO Retrying connection
+WARNING High memory usage detected
+ERROR Database connection lost
+INFO Shutdown complete
+
+./loganalyzer -f sample.log
